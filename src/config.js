@@ -10,6 +10,8 @@ const defaultConfig = {
   linkers: [],
   commands: {},
 
+  cookieDomain: 'auto',
+
   // https://github.com/MatteoGabriele/vue-analytics/issues/103
   disabled: false,
 

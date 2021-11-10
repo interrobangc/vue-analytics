@@ -26,7 +26,7 @@ export default function createTrackers () {
     const customIdConfig = config.customIdFields[domain] || {}
     const options = ids.length > 1 ? { ...config.fields, ...customIdConfig, name } : config.fields
 
-    window.ga('create', (domain.id || domain), 'auto', options)
+    window.ga('create', (domain.id || domain), config.cookieDomain, options)
   })
 
   config.beforeFirstHit()
